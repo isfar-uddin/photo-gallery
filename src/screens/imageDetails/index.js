@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { View, Image, Text } from 'react-native';
 import Styles from './styles';
 
 export default function ImageDetails ({route, navigation}) {
 
+  /*Get image details from params*/
   const { imageDetail } = route.params;
 
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FlatList } from 'react-native';
-import Images from './../../objects/images';
+import Images from '../../dummyData';
 import ImageRender from '../../components/imageRender';
 
 
