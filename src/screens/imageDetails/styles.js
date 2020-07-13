@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
   },
   detailImage: {
     width: '100%',
-    height: '80%'
+    height: '70%'
   },
   titleText: {
     color: 'black',

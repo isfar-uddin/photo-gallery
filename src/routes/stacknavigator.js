@@ -6,7 +6,9 @@ const Stack = createStackNavigator();
 
 function StackNavigator() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={()=>({
+      headerShown: false
+    })}>
       <Stack.Screen name="Gallery" component={GalleryView} />
       <Stack.Screen name="ImageDetails" component={ImageDetails} />
     </Stack.Navigator>
