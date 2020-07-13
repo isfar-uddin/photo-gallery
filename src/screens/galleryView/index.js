@@ -1,19 +1,30 @@
 import React from 'react';
 import { View, FlatList } from 'react-native';
-import Images from '../../dummyData';
+import {connect} from 'react-redux';
 import ImageRender from '../../components/imageRender';
 import Header from './../../components/header';
+import {fetchImages} from "../../actions/imageActions";
 
+function GalleryView (props) {
+  /*Fetch images*/
+  props.fetchImages();
 
-export default function GalleryView ({ navigation }) {
   return (
-    <View>
+    <View style={{flex:1}}>
       <Header title="Gallery"/>
       <FlatList
-        data={Images}
-        renderItem={(item,index) => ImageRender(item, navigation, 'ImageDetails')}
+        data={props.images}
+        renderItem={(item,index) => ImageRender(item, props.navigation, 'ImageDetails')}
         numColumns = {4}
       />
     </View>
   )
 }
+
+const mapStateToProps = state => {
+  return ({
+    images: state.data.images
+  })
+}
+
+export default connect(mapStateToProps, { fetchImages })(GalleryView);

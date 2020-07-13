@@ -8,8 +8,6 @@ export default function ImageDetails ({route, navigation}) {
   /*Get image details from params*/
   const { imageDetail } = route.params;
 
-  console.log('Navigation: ', navigation);
-
   return (
     <View>
       <Header backBtn="Gallery" title="Details" navigation={navigation}/>

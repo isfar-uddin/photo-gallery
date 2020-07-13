@@ -6,6 +6,7 @@ import Styles from "./styles";
 export default function ImageRender({ item }, navigation, switchScreenName) {
   return (
     <View style={Styles.infoContainer}>
+
       {/*User name and his avatar*/}
       <View style={Styles.userContainer}>
         <Image style={Styles.avatar} source={{uri: item.userDetails.avatar}}/>
@@ -21,7 +22,6 @@ export default function ImageRender({ item }, navigation, switchScreenName) {
         onPress={() => navigation.navigate(switchScreenName, {
           imageDetail: item
         })}>
-
         <Image style={Styles.image} source={item.url}/>
       </TouchableHighlight>
     </View>

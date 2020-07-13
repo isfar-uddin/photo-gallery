@@ -1,16 +1,21 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
+import {Provider} from 'react-redux';
+import store from './src/store';
 import { enableScreens } from 'react-native-screens';
 import StackNavigator from './src/routes/stacknavigator';
 
 enableScreens();
 
+
 function App() {
   return (
-    <NavigationContainer style={styles.container}>
-      <StackNavigator/>
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer style={styles.container}>
+        <StackNavigator/>
+      </NavigationContainer>
+    </Provider>
   );
 }
 
