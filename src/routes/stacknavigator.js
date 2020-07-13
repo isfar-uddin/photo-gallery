@@ -1,14 +1,14 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import GalleryView from '../screens/galleryView';
-import NextScreen from '../screens/imageDetails';
+import ImageDetails from '../screens/imageDetails';
 const Stack = createStackNavigator();
 
 function StackNavigator() {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Gallery" component={GalleryView} />
-      <Stack.Screen name="Details" component={NextScreen} />
+      <Stack.Screen name="ImageDetails" component={ImageDetails} />
     </Stack.Navigator>
   );
 }

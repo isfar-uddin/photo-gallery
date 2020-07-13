@@ -46,7 +46,6 @@ const data = [
   {id: 45, userDetails:{name: 'Isfar', avatar: 'https://i.pravatar.cc/100?img=9', follower: 12}, url:require('./../../assets/images/rainbow.webp'), likes: 4, comments: 6},
   {id: 46, userDetails:{name: 'Isfar', avatar: 'https://i.pravatar.cc/100?img=10', follower: 12}, url:require('./../../assets/images/rose_garden.jpg'), likes: 1, comments: 2},
   {id: 47, userDetails:{name: 'Isfar', avatar: 'https://i.pravatar.cc/100?img=11', follower: 12}, url:require('./../../assets/images/swan.jpg'), likes: 1, comments: 3},
-  {id: 48, userDetails:{name: 'Isfar', avatar: 'https://i.pravatar.cc/100?img=12', follower: 12}, url:require('./../../assets/images/squirrel.webp'), likes: 5, comments: 2}
 
 ];
 
